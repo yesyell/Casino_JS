@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Casino</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>Random Number Game</h1>
+    <h3>
+      Generate a Number between 0 and
+      <!-- <span class="maxNum"></span> -->
+      <form class="gameForm">
+        <input
+          class="rangeInput"
+          type="number"
+          style="width: 150px;"
+          min="0"
+          max="200"
+        />
+      </form>
+    </h3>
+    <div class="numBox">
+      Guess the number:
+      <!-- &nbsp; -->
+      <form class="numForm">
+        <input class="inputNum" type="number" style="width: 150px;" />
+        <button>Play!</button>
+      </form>
+    </div>
+    <div class="paintChose"></div>
+    <h4 class="paintResult"></h4>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
